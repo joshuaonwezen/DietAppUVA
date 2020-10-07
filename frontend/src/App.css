@@ -1,0 +1,178 @@
+:root {
+  /* Custom variables */
+  --main-colour: #f33f3f;
+  --main-colour-hover: #862929;
+}
+
+.App {
+  text-align: center;
+}
+
+.App > article {
+  padding-top: 100px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--main-colour);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  display:flex;
+  justify-content: center;
+  background-color: var(--main-colour);
+  position:fixed;
+  width:100%;
+  font-weight: bold;
+  font-size: 20px;
+  z-index:100;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  width:100%;
+  max-width: 600px;
+}
+
+nav > ul > li {
+  padding:25px;
+  color: white;
+  /* background-color: black; */
+  cursor: pointer;
+}
+
+nav li:hover {
+  background-color: var(--main-colour-hover);
+}
+
+.selected {
+  background-color: var(--main-colour-hover);
+}
+
+.dinner-choice {
+  padding: 20px;
+  margin: 5px;
+  background-color: #FF0000;
+  color: white;
+  border: 1px solid #000;
+  cursor:pointer;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.home-screen {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home-screen--recipe input[type="submit"] {
+  margin-top: 5px;
+}
+
+.dinner-back {
+  width: 65px;
+  font-size: 22px;
+  background-color:#fff;
+  border: 1px solid #000;
+  cursor:pointer;
+  position: absolute;
+  left: 0;
+  margin-left: 15px;
+}
+
+form {
+  margin-bottom: 25px;
+  display:flex;
+  flex-direction:column;
+}
+
+.home-screen--recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Loader */
+.lds-dual-ring {
+  z-index:4;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: 100;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button, input[type="submit"] {
+  cursor:pointer;
+}
+
+.bstyle1 {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.bred {
+    background: #FF0000;
+}

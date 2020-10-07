@@ -1,0 +1,39 @@
+form {
+    margin: auto;
+    max-width: 250px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.registerform > div {
+    background-color: #88888826;
+    padding: 20px;
+}
+
+.registerform {
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+    font-size: 18px;
+}
+
+input {
+    height: 20px;
+    font-size: 16px;
+}
+
+.register .Collapsible__trigger {
+    width: auto!important;
+}
+
+.register .Collapsible__contentInner {
+    text-align: left;
+}
+.register input[type=number]{
+    width: 95%;
+}

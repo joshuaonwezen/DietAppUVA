@@ -1,0 +1,55 @@
+.settings_form {
+   width: 400px; 
+   margin: 0 auto;
+}
+
+.travel-distance-slider {
+    margin-bottom: 47px;
+}
+
+/* The link which when clicked opens the collapsable area */
+.preferences-menu .Collapsible__trigger {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  width: auto;
+  max-width: none;
+  border: 1px solid white;
+  background: lightgreen;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+
+  /* &:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  } */
+
+  /* &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  } */
+}
+
+.settings_form .Collapsible__trigger {
+  width: 100%!important;
+}
+
+.settings_form .Collapsible__contentInner {
+  text-align: left;
+}
